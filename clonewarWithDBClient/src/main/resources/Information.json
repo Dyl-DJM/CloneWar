@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "example.java",
+    "line_nb": 1,
+    "hash": 5143169287
+  },
+  {
+    "filename": "example.java",
+    "line_nb": 5,
+    "hash": 472629
+  },
+  {
+    "filename": "example.java",
+    "line_nb": 9,
+    "hash": 32628473
+  },
+  {
+    "filename": "example.java",
+    "line_nb": 13,
+    "hash": 19181940
+  },
+  {
+    "filename": "example.java",
+    "line_nb": 17,
+    "hash": 4837129
+  },
+  {
+    "filename": "otherExample.java",
+    "line_nb": 1,
+    "hash": 5143169287
+  },
+  {
+    "filename": "otherExample.java",
+    "line_nb": 5,
+    "hash": 472629
+  },
+  {
+    "filename": "otherExample.java",
+    "line_nb": 9,
+    "hash": 7593820
+  }
+]

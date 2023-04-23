@@ -1,0 +1,83 @@
+/**
+ * Authors: Dylan DE JESUS & Vincent RICHARD
+ */
+
+form, .comparisonFormField, .is-1, .hero {
+    margin: 4% 0% 0% 0%;
+}
+
+.artifact-list {
+    margin: 2% 0%;
+    white-space: pre-wrap;
+}
+
+.elem {
+    font-family: "Roboto";
+}
+
+.global {
+    width: 100%;
+}
+
+.left {
+    float:left;
+    width:60%;
+}
+.right {
+    margin-left:60%   
+}
+
+.analyse {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.textAnalyse {
+    height: 100px;
+}
+
+.subtextAnalyse {
+    margin-top:50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.inputAnalyse {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+
+.informationText {
+    height: 100px;
+}
+
+.subinformationText {
+    margin-top: 50px;
+}
+
+.paragraphBlock {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.center {
+    margin-left: 75%;
+}
+
+
+a:hover {
+    background-color: sandybrown;
+}
+
+.button {
+    margin: 2% 0%
+}
+
+.inputAnalyse {
+    margin: 2% 0%;
+}

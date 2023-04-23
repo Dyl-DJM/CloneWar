@@ -1,0 +1,29 @@
+server:
+  port: 8080
+db:
+  source: "jdbc"
+  connection:
+    url: "jdbc:sqlite://127.0.0.1/8080/sqlite_database.db"
+    initializationFailTimeout: -1
+    connectionTimeout: 2000
+    helidon:
+      pool-metrics:
+        enabled: true
+      services:
+        tracing:
+          - enabled: true
+        metrics:
+          - type: METER
+      health-check:
+        type: "query"
+        statementName: "health-check"
+  statements:
+    create-information: "CREATE TABLE Information (filename VARCHAR(4096) NOT NULL, line_nb UNSIGNED INT CHECK (line_nb>=1), hash UNSIGNED BIGINT, PRIMARY KEY (filename, line_nb)"
+    select-all-information: "SELECT filename, line_nb, hash FROM Information"
+    select-information-by-filename: "SELECT filename, line_nb, hash FROM Information WHERE filename = ?"
+    select-information-by-line_nb: "SELECT filename, line_nb, hash FROM Information WHERE line_nb = :line_nb"
+    select-information-by-hash: "SELECT filename, line_nb, hash FROM Information WHERE hash = :hash"
+    insert-information: "INSERT INTO Information(filename, line_nb_ hash) VALUES (?, ?, ?)"
+    update-information-by-filename-and-line: "UPDATE Information SET hash = :hash WHERE filename = :filename AND line_nb = :line_nb"
+    delete-information-by-filename: "DELETE FROM Information WHERE filename = :filename"
+    delete-all-information: "DELETE FROM Information"
